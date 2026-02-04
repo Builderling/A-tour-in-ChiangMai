@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header ul li{
+    display: inline;
+    padding: 0 15px;
+}
+
+header ul{
+    text-align: center;
+    background-color: darkcyan;
+    padding: 15px;
+}
+
+body{
+    background-color: rgb(95, 160, 146);
+}
+
+.intro{
+    text-align: center;
+    background-color: white;
+}
+
+.Info{
+    text-align: center;
+}
+
+.image-container {
+    position: relative; /* Container must be relative so text can be positioned absolutely within it */
+    display: inline-block; /* Helps maintain layout flow */
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block; /* Removes default bottom margin/spacing issues */
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute; /* Positions the text relative to the container */
+    top: 50%; /* Moves the top edge of the text to the vertical center */
+    left: 50%; /* Moves the left edge of the text to the horizontal center */
+    transform: translate(-50%, -50%); /* Centers the text block itself (essential for perfect centering) */
+    color: white; /* Ensures text is readable */
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background for better readability */
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    animation: floatUp 2s ease-in-out infinite;
+    animation: fadeIn 2s ease-in forwards;
+    opacity: 0; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animated-text {
+    position: relative; 
+    animation: floatUp 3s ease-in-out infinite; 
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-20px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
+
+.recommendations-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.recommendations-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.recommendation-list {
+    display: flex; /* Use flexbox for a horizontal layout */
+    justify-content: space-around;
+    gap: 15px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.recommendation-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px; /* Set a fixed width for uniformity */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.recommendation-item:hover {
+    transform: translateY(-5px); /* Simple hover effect */
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item-title {
+    font-size: 1.1em;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-size: 1em;
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: "Taviraj", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
