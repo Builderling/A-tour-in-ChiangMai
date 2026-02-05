@@ -144,4 +144,31 @@ body {
     font-family: "Taviraj", serif;
     font-weight: 400;
     font-style: normal;
+
   }
+
+.Contact{
+    text-align: center;
+    color: white;
+    
+  }
+
+  footer{
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+    padding: 25px;
+  }
+
+ .Email{
+    padding: 25px;
+    margin: 0 25px;
+    color: white;
+    text-align: center;
+  }
+
+.AboutMe{
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
